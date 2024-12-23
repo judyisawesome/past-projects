@@ -72,6 +72,15 @@ The datasets used in this project include:
 3. **Testing Metrics**:
    - Implement metrics to fine-tune and improve model performance.
 
+
+---
+## Contributors
+-Cathy (Yidan) Wang
+
+-Kexian (Kay) WU
+
+-Judy (Zhiyi) Zhu
+
 ---
 
 ## **References**

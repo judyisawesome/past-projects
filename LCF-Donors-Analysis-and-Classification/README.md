@@ -82,4 +82,12 @@ Following the order of each step as marked, kindly replace the input at the begi
 - Use raw data about donor_file and gift_file only in the very first step about cleaning
 - Then for the following steps 2-4, replace the name of output from the previous step at the beginning of code file too
 - The final output is about using the best model saved during the traning process to make a prediction
+- 
+
+## Contributors
+- Xinyang Zhou
+- Xiyi Lin
+- Elsie Lin
+- Cailey Farrell
+- Judy (Zhiyi) Zhu
 
