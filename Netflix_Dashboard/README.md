@@ -60,5 +60,12 @@ The visualizations were created in Tableau to address the business objectives. K
 3. **Growth Potential**: Identify subgenres with potential for growth using viewer feedback and broader market analysis.
 
 ---
+## Contributors
+-Kira Luo
+-Zhiwei Gu
+-Daniel Wang
+-Rishabh Setty
+-Judy (Zhiyi) Zhu
 
+---
 Feel free to download and explore the Tableau file for detailed insights and visualizations.
