@@ -62,9 +62,13 @@ The visualizations were created in Tableau to address the business objectives. K
 ---
 ## Contributors
 -Kira Luo
+
 -Zhiwei Gu
+
 -Daniel Wang
+
 -Rishabh Setty
+
 -Judy (Zhiyi) Zhu
 
 ---
