@@ -1,6 +1,6 @@
 # past-projects
 
-# Hi there 👋, I'm Zhiyi Zhu!
+# Hi there 👋, I'm Judy Zhu!
 🎓 Master's in Machine Learning and Data Science  
 🌟 Specializing in predictive analytics, data engineering, and AI solutions.  
 💼 Open to collaborations in data science and machine learning.  
