@@ -1,0 +1,119 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
+
+
+```{r}
+
+library(ALEPlot)
+library(caret)
+library(dplyr)
+library(nnet)
+library(tidyverse)
+library(rpart)
+
+```
+
+```{r}
+df = read_csv("df.csv")
+df
+```
+
+```{r}
+df = select(df, -...1)
+df = select(df, -last_review)
+df = select(df, -minimum_nights)
+```
+
+```{r}
+df$logprice = log(df$price)
+df$neighbourhood_group = as.factor(df$neighbourhood_group)
+df$room_type = as.factor(df$room_type)
+df$license = as.factor(df$license)
+df$minimum_nights_bins = as.factor(df$minimum_nights_bins)
+df[,c(4:7, 9:12, 14)] <- scale(df[,c(4:7, 9:12, 14)], center = TRUE, scale = TRUE)
+df
+```
+
+
+
+
+```{r}
+
+control <- rpart.control(minbucket = 20, cp = 0.0001, maxsurrogate = 0, usesurrogate = 0, xval = 10)
+air.tr <- rpart(df$logprice ~ ., df[,-c(3)], method = "anova", control = control)
+plotcp(air.tr)
+printcp(air.tr) 
+#prune back to optimal size, according to plot of CV r^2
+air.tr1 <- prune(air.tr, cp=0.00076)  #approximately the cp corresponding to the best size
+air.tr1
+par(cex=.9); plot(air.tr1, uniform=F); text(air.tr1, use.n = F); par(cex=1)
+air.tr1$variable.importance
+air.tr1$cptable[nrow(air.tr1$cptable),] #shows training and CV r^2, and other things
+
+
+```
+
+```{r}
+#training r^2
+y<-df$logprice
+yhat<-as.numeric(predict(air.tr1))
+e<-y-yhat
+1-var(e)/var(y)
+```
+
+
+```{r}
+# Assuming df is your data frame and logprice is a column in it
+
+# Assuming you've fitted a model named 'air.tr1'
+
+# Extracting the target variable y from your data frame
+y <- df$logprice
+
+# Making predictions using the model
+yhat <- as.numeric(predict(air.tr1))
+
+# Calculating the residuals
+e <- y - yhat
+
+# Calculating RMSE
+rmse <- sqrt(mean(e^2))
+
+# Printing the RMSE
+print(rmse)
+
+```
+
+
+```{r}
+printcp(air.tr1)
+```
+
+```{r}
+# Assuming air.tr1 is a tree-based model (e.g., random forest, gradient boosting, etc.)
+# Extracting variable importance
+importance <- air.tr1$variable.importance
+
+# Sorting the variable importance
+importance_sorted <- importance[order(importance, decreasing = TRUE)]
+
+# Creating a bar plot to visualize variable importance
+barplot(importance_sorted, main = "Variable Importance", ylab = "Importance", xlab = "Variables")
+
+```
+
+
+```{r}
+# Assuming air.tr1 is a tree-based model (e.g., random forest, gradient boosting, etc.)
+# Extracting variable importance
+importance <- air.tr1$variable.importance
+
+# Creating a bar plot to visualize variable importance for all variables
+barplot(importance, main = "Variable Importance", ylab = "Importance",las=2)
+
+```
+
