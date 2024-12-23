@@ -1,40 +1,26 @@
-# Aramco Internship
+Aramco Internship
+During my internship, I contributed to updating the BatPaC model and developed automated analysis workflows using Python. Due to confidentiality and NDA restrictions, I have provided pseudocode for the analytical components of the project to demonstrate my approach and methodology.
 
-During my internship at Aramco, I contributed to updating the **BatPaC Model** and automated various analyses using Python. Due to NDA and confidentiality agreements, I have uploaded only pseudocode for the analysis components of this project.
+Key Contributions
+Enhanced the BatPaC model with updated parameters and calculations to reflect industry trends.
+Automated data analysis and visualization pipelines, improving efficiency and accuracy.
+Conducted detailed cost comparisons and trend analyses for cathodes and batteries across multiple regions.
+Analysis Highlights
+Cathode Cost Trend Analysis
 
----
+Investigated trends over time to identify cost drivers and regional variations.
+Cathode Cost Breakdown
 
-## 📋 Table of Contents
-1. [Cathode Cost Trend Analysis](#cathode-cost-trend-analysis)
-2. [Cathode Cost Breakdown](#cathode-cost-breakdown)
-3. [Cathode Cost Comparison: US vs. China](#cathode-cost-comparison-us-vs-china)
-4. [Battery Cost Breakdown](#battery-cost-breakdown)
-5. [Battery Cost Comparison: US vs. China](#battery-cost-comparison-us-vs-china)
-6. [Battery Cost Trend Comparison: US vs. China](#battery-cost-trend-comparison-us-vs-china)
+Detailed breakdown of cathode costs by material and manufacturing processes.
+Cathode Cost Comparison: US vs. China
 
----
+Comparative analysis to evaluate regional cost competitiveness.
+Battery Cost Breakdown
 
-## 🔍 Details
+Comprehensive analysis of battery costs, including materials, assembly, and overheads.
+Battery Cost Breakdown Comparison: US vs. China
 
-### Cathode Cost Trend Analysis
-Analyzed historical trends in cathode material costs using Python automation, focusing on key market factors and economic drivers.
+Side-by-side comparison to identify cost disparities and opportunities for optimization.
+Battery Cost Trend Comparison: US vs. China
 
-### Cathode Cost Breakdown
-Decomposed cathode costs into individual components to identify major cost contributors.
-
-### Cathode Cost Comparison: US vs. China
-Compared cathode material costs across the United States and China, highlighting regional variations due to supply chain, labor, and material costs.
-
-### Battery Cost Breakdown
-Detailed the breakdown of battery costs, categorizing expenses into manufacturing, materials, and overheads.
-
-### Battery Cost Comparison: US vs. China
-Examined the differences in battery production costs between the US and China, identifying cost-saving opportunities.
-
-### Battery Cost Trend Comparison: US vs. China
-Tracked and analyzed trends in battery costs over time in both regions, providing insights into global market competitiveness.
-
----
-
-## 🚀 Additional Information
-For more details about the BatPaC model, visit the [Argonne National Laboratory's BatPaC](https://www.anl.gov/cse/batpac-model) official page.
+Longitudinal analysis of cost trends to predict future market dynamics.
