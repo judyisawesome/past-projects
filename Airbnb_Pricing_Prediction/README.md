@@ -25,7 +25,7 @@ This dataset from Kaggle describes the latest listing activity in New York City,
 - Modeling
     - Linear Regression
     - [Neural Network](Project_NN.Rmd)
-    - Classification and Regression Tree (CART)
+    - [Classification and Regression Tree] (tree model project.Rmd)
     - [XGBoost](Project_XGBoost.Rmd)
 
 ![Model Performance and Feature Importance](Performance.png)
