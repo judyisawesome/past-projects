@@ -76,7 +76,9 @@ The datasets used in this project include:
 ---
 ## Contributors
 -Cathy (Yidan) Wang
+
 -Kexian (Kay) WU
+
 -Judy (Zhiyi) Zhu
 
 ---
